@@ -1,5 +1,5 @@
 body {
-    background: gray;
+    background: rgba(128,128,128,0.5);
 }
 
 ul {
@@ -284,7 +284,11 @@ section {
 .congrats {
     width:500px;
     color:#F44336;
+    padding: 5px 5px;
 
+}
+.wrapper {
+    display: none;
 }
 
 /*body:hover section,*/
@@ -296,7 +300,8 @@ section {
     width: 500px;
     position: absolute;
     right: 20px;
-    bottom: 560px;
+    font-size: 1.4rem;
+    bottom: 580px;
     text-align: left;
     background: transparent;
     color: black;
