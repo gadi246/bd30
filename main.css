@@ -292,6 +292,16 @@ section {
     /*animation-name: paused !important;*/
 /*}*/
 /*catch the red*/
+.instructions {
+    width: 500px;
+    position: absolute;
+    right: 20px;
+    bottom: 560px;
+    text-align: left;
+    background: transparent;
+    color: black;
+
+}
 .score,
 .hbd{
     width: 500px;
