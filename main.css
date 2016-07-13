@@ -12,15 +12,25 @@ ul {
 
 p {
     /* styling the p's*/
+    font-family: "Open Sans";
+    text-align: right;
     font-size: 2rem;
-    color: blue;
+    color: #F44336;
     background: rgba(255, 255, 255, 0.5);
+}
+.first p,
+.third p{
+    transform: rotate(180deg)translateY(-150px);
+}
+.first p {
+    text-align: left;
 }
 
 .bar div {
     /*basic style of the bullets*/
     width: 10px;
     height: 10px;
+    border-radius: 50%;
     background: #fff;
     margin-left: 10px;
 }
@@ -36,14 +46,17 @@ section {
 .mask {
     height: 253px;
     width: 469px;
-    border: 3px solid red;
+    border: 3px solid #F44336;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
 }
 
 .onpageload {
     /*displaying the last img*/
-    background-image: url(http://www.106fm.co.il/images/cache/469x255/2016-05/25aac949fa469d7188958d34fc9490a8.jpg);
+    background-image: url(images/20150911_170333.jpg);
+    background-size: cover;
+    transform: rotate(180deg);
     top: 0;
 }
 
@@ -67,15 +80,20 @@ section {
 /* all bellow are displaying bg image when targeting*/
 
 #sec1 {
-    background-image: url(http://www.106fm.co.il/images/cache/469x255/2016-05/682780111e1d1974fd84e109241d97c0.jpg);
+    background-image: url(images/20150917_133332.jpg);
+    background-size:cover;
+
 }
 
 #sec2 {
-    background-image: url(http://www.106fm.co.il/images/cache/469x255/2016-05/c03225268328623fa505e916683dda97.jpg?1462457491);
+    background-image: url(images/20151001_100732.jpg);
+    background-size:cover;
+    transform: rotate(180deg);
 }
 
 #sec3 {
-    background-image: url(http://www.106fm.co.il/images/cache/469x255/2016-05/cebd726c34d62d23f5f36213435fdae4.jpg);
+    background-image: url(images/20151004_165551_HDR.jpg);
+    background-size:cover;
 }
 
 .first {
@@ -263,13 +281,55 @@ section {
         background-color: #fff;
     }
 }
+.congrats {
+    width:500px;
+    color:#F44336;
 
-body:hover section,
-body:hover li div {
-    animation-name: paused !important;
 }
 
+/*body:hover section,*/
+/*body:hover li div {*/
+    /*animation-name: paused !important;*/
+/*}*/
+/*catch the red*/
+.score,
+.hbd{
+    width: 500px;
+    text-align: left;
+    position: absolute;
+    right:20px;
+    bottom:510px;
+}
+.hbd {
+    display: none;
+}
 .bar:hover div {
     background: red;
     opacity: 0.3;
+}
+.game div {
+    width:200px;
+    height:200px;
+    display:inline-block;
+    background:darkblue;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.game {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px dashed darkslateblue;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    padding: 20px 0;
+
+}
+
+.game .winner {
+    content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png");
+
 }
